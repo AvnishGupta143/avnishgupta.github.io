@@ -264,7 +264,7 @@
 
 		$('.sticky-parent').css('height', h);
 
-		$("#sticky_item").stick_in_parent();
+		//$("#sticky_item").stick_in_parent();
 
 	};
 
@@ -285,6 +285,19 @@
 	     	]
 		})
 	};
+	var attachVideos = function(){
+		$(document).on('click','#work1',function(){
+			$("#binPickingModal").modal("show");
+		})
+		$(document).on('click','#work2',function(){
+			$("#avrmModal").modal("show");
+		})
+		$(document).on('click','#work3',function(){
+			$("#arassemblyModal").modal("show");
+		})
+
+		
+	}
 
 	// Document on load.
 	$(function(){
@@ -304,6 +317,7 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		attachVideos();
 	});
 
 

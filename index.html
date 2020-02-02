@@ -81,7 +81,8 @@
 				</nav>
 
 				<div class="colorlib-footer">
-					<p><small>&copy;Copyright &copy;<script>
+					<p><small>&copy;Copyright &copy;
+							<script>
 								document.write(new Date().getFullYear());
 							</script> <a href="https://colorlib.com" target="_blank">Colorlib</a></small></p>
 					<ul>
@@ -1010,7 +1011,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/img-1.jpg);">
+								<div id="work1" class="project" style="background-image: url(images/img-1.jpg);">
 									<div class="desc">
 										<div class="con">
 											<h3><a href="work.html">Work 01</a></h3>
@@ -1025,7 +1026,7 @@
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/img-2.jpg);">
+								<div id="work2" class="project" style="background-image: url(images/img-2.jpg);">
 									<div class="desc">
 										<div class="con">
 											<h3><a href="work.html">Work 02</a></h3>
@@ -1040,7 +1041,7 @@
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/img-3.jpg);">
+								<div id="work3" class="project" style="background-image: url(images/img-3.jpg);">
 									<div class="desc">
 										<div class="con">
 											<h3><a href="work.html">Work 03</a></h3>
@@ -1054,7 +1055,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+							<!-- <div id="work3" class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
 								<div class="project" style="background-image: url(images/img-4.jpg);">
 									<div class="desc">
 										<div class="con">
@@ -1068,7 +1069,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div id="work3">
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="project" style="background-image: url(images/img-5.jpg);">
 									<div class="desc">
@@ -1106,7 +1107,7 @@
 											class="icon-reload"></i></a></p>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</section>
 
 				<section class="colorlib-blog" data-section="blog">
@@ -1220,23 +1221,24 @@
 							</div>
 							<div class="modal" tabindex="-1" role="dialog">
 								<div class="modal-dialog" role="document">
-								  <div class="modal-content">
-									<div class="modal-header">
-									  <h5 class="modal-title">Modal title</h5>
-									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									  </button>
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title">Modal title</h5>
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p>Modal body text goes here.</p>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary">Save changes</button>
+											<button type="button" class="btn btn-secondary"
+												data-dismiss="modal">Close</button>
+										</div>
 									</div>
-									<div class="modal-body">
-									  <p>Modal body text goes here.</p>
-									</div>
-									<div class="modal-footer">
-									  <button type="button" class="btn btn-primary">Save changes</button>
-									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-									</div>
-								  </div>
 								</div>
-							  </div>
+							</div>
 							<!--div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
@@ -1269,27 +1271,76 @@
 		</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
 
-	<div id="myModal" class="modal fade" role="dialog">
+	<div id="binPickingModal" class="modal fade" role="dialog">
 		<div class="modal-dialog">
-	  
-		  <!-- Modal content-->
-		  <div class="modal-content">
-			<div class="modal-header">
-			  <button type="button" class="close" data-dismiss="modal">&times;</button>
-			  <h4 class="modal-title">Modal Header</h4>
-			</div>
-			<div class="modal-body">
-				<iframe heigh="640" width="352"src="https://youtu.be/Lqslr_6yrkQ"></iframe> 
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		  </div>
-	  
-		</div>
-	  </div>
-	  
 
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Bin Picking</h4>
+				</div>
+				<div class="modal-body">
+					<iframe width="550" height="352" src="https://www.youtube.com/embed/Lqslr_6yrkQ" frameborder="0"
+						allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+					<!-- <iframe heigh="640" width="352"src="https://youtu.be/embed/Lqslr_6yrkQ"></iframe>  -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="avrmModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">ARVM</h4>
+				</div>
+				<div class="modal-body">
+					<iframe width="550" height="352" src="https://www.youtube.com/embed/yE7mMR6rPRU" frameborder="0"
+						allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+					<!-- <iframe heigh="640" width="352"src="https://youtu.be/embed/Lqslr_6yrkQ"></iframe>  -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="arassemblyModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">AR Assembly</h4>
+				</div>
+				<div class="modal-body">
+					<iframe width="550" height="352" src="https://www.youtube.com/embed/MffxG6wXffs" frameborder="0"
+						allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
+					<!-- <iframe heigh="640" width="352"src="https://youtu.be/embed/Lqslr_6yrkQ"></iframe>  -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
